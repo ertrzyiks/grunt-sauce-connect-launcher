@@ -93,7 +93,6 @@ module.exports = function (grunt) {
 
 	grunt.registerMultiTask('sauce_connect', 'Grunt plug-in to download and launch Sauce Labs Sauce Connect', function () {
 		var options = this.options({
-				tunnelIdentifier: 'Tunnel' + new Date().getTime(),
 				verbose: grunt.option('verbose') === true,
 				logger: grunt.verbose.writeln
 			}),
